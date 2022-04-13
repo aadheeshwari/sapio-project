@@ -1,0 +1,72 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  background-image: linear-gradient(to right , #02caf2,#01f401 ,#eafa05 , #ffa600);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#img{
+  
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 50%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: inherit;
+  color: white;
+  transform: rotateY(180deg);
+}
+#nav{
+  background-color: black;
+  justify-content: center;
+}
+button{
+  border-radius: 50% !important;
+
+}
+#unlike{
+  background-color: red;
+}
+#like{
+   background-color: #1aea1a;
+}
+input{
+  border-radius: 20px !important;
+  width: 300px
+}
+#sea{
+  background-image: linear-gradient(to right , #f202be,#efff14 );
+}
